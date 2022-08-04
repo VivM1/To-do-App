@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -15,6 +16,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures{
+        viewBinding true
+        dataBinding true
     }
 
     buildTypes {
@@ -54,7 +59,7 @@ dependencies {
     kapt "androidx.room:room-compiler:2.4.2"
 
     //coroutine support for room
-    implementation "androidx.room:room-ktx: 2.4.2"
+    implementation "androidx.room:room-ktx:2.4.2"
 
 
     //coroutines

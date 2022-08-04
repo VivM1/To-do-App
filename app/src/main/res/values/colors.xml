@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    
+    
+    <array name="random_colors">
+        <item name= "red_400" type="color">#e84e40 </item>
+        <item type="color">@color/teal_700</item>
+        <item  type="color">#FA528B</item>
+        <item  type="color">#5164CD</item>
+        <item  type="color">#1C68A5</item>
+        <item  type="color">#40E146</item>
+        <item  type="color">#BCAF44</item>
+        <item  type="color">#16DAC8</item>
+        <item  type="color">#FA9704</item>
+        <item  type="color">#E39D98</item>
+    </array>
 </resources>
