@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaskActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+
+        <androidx.appcompat.widget.Toolbar
+            app:title="New Task"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/white"
+            android:id="@+id/newTaskToolB"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:textColor="@color/cardview_dark_background"
+        android:text="Title"
+        android:textSize="17sp"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleInpLay"
+        app:boxStrokeColor="@color/cardview_dark_background"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Task Title Here"
+            android:paddingStart="8dp"
+            android:inputType="textCapWords"
+            android:textSize="15sp"
+            android:paddingEnd="8dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textColor="@color/cardview_dark_background"
+        android:text="Description"
+        android:textSize="17sp"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskInpLay"
+        app:boxStrokeColor="@color/cardview_dark_background"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description Here"
+            android:lines="4"
+            android:gravity="start"
+            android:paddingStart="8dp"
+            android:textSize="15sp"
+            android:paddingEnd="8dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<TextView
+        android:textColor="@color/cardview_dark_background"
+        android:text="Set Date And Time"
+        android:textSize="17sp"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateInpLay"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/dateEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:drawableEnd="@drawable/ic_date_time"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:gravity="start"
+            android:hint="Date/Time"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeLay"
+        android:visibility="gone"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/cardview_shadow_end_color"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:drawablePadding="8dp"
+            android:id="@+id/timeEdt"
+            android:hint="Set Time"
+            android:drawableTint="@color/black"
+            android:drawableEnd="@drawable/ic_accesstime"
+            android:focusable="false"
+            android:paddingStart="8dp"
+            android:textSize="15sp"
+            android:paddingEnd="8dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp">
+
+
+<!--        <Spinner-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_weight="1" />-->
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:cornerRadius="20dp"/>
+
+
+
+    </LinearLayout>
