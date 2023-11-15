@@ -1,2 +1,2 @@
-# To-do-App
-A very basic to-do app
+#Basics 
+All the basics that are learned and implemented will be saved here 
